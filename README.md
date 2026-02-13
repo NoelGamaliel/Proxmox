@@ -52,3 +52,13 @@ To apply the changes, restart the necessary Proxmox VE services.
 Finally, verify that the `local-lvm` storage has been removed and that the `local` storage is utilizing all available disk space.
 
 `pvesm status`
+
+****************************************************************************************************************************************
+How to fixed on client ssh if you have issues key to communicate with both side.
+
+`nano ~/.ssh/config`
+# Put this one inside on your file ssh
+`#Legacy Changes
+    KexAlgorithms +diffie-hellman-group1-sha1
+    HostKeyAlgorithms +ssh-rsa
+    Ciphers +aes256-cbc,aes128-cbc,3des-cbc`
