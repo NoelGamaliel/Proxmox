@@ -57,12 +57,13 @@ Finally, verify that the `local-lvm` storage has been removed and that the `loca
 ****************************************************************************************************************************************
 How to fixed on client ssh if you have issues key to communicate with both side.
 
-#Upgrade your proxmox to new version
-https://www.youtube.com/watch?v=X67r5Xo69d8
-
 `nano ~/.ssh/config`
 # Put this one inside on your file ssh
 `#Legacy Changes
     KexAlgorithms +diffie-hellman-group1-sha1
+
+
+#Upgrade your proxmox to new version
+https://www.youtube.com/watch?v=X67r5Xo69d8
     HostKeyAlgorithms +ssh-rsa
     Ciphers +aes256-cbc,aes128-cbc,3des-cbc`
