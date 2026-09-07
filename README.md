@@ -62,8 +62,8 @@ How to fixed on client ssh if you have issues key to communicate with both side.
 `#Legacy Changes
     KexAlgorithms +diffie-hellman-group1-sha1
 
+    HostKeyAlgorithms +ssh-rsa
+    Ciphers +aes256-cbc,aes128-cbc,3des-cbc`
 
 #Upgrade your proxmox to new version
 https://www.youtube.com/watch?v=X67r5Xo69d8
-    HostKeyAlgorithms +ssh-rsa
-    Ciphers +aes256-cbc,aes128-cbc,3des-cbc`
